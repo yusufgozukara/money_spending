@@ -1,6 +1,6 @@
 import React from "react";
 
-const Product = ({ product, basket, setBasket }) => {
+const Product = ({ product, basket, setBasket, total, money }) => {
   const { id, title, price } = product;
   const basketItem = basket.find((item) => item.id === product.id);
 
@@ -51,7 +51,13 @@ const Product = ({ product, basket, setBasket }) => {
             {" "}
             {(basketItem && basketItem.amount) || 0}{" "}
           </span>
-          <button onClick={addBasket}>Ekle</button>
+          <button
+            // disabled={basketItem && basketItem.amount === 10}
+            disabled={total + product.price > money}
+            onClick={addBasket}
+          >
+            Ekle
+          </button>
         </div>
 
         <style jsx>{`

@@ -1,9 +1,17 @@
 import React from "react";
 
-const Header = ({ money }) => {
+const Header = ({ money, total }) => {
   return (
     <>
-      <div>Harcamak için {money} $ paranız bulunmaktadır...</div>
+      <div>
+        {total > 0 && money - total !== 0 && (
+          <div>Harcamak için $({money - total}) paranız bulunmaktadır...</div>
+        )}
+        {total === 0 && (
+          <div>Harcamak için $({money}) paranız bulunmaktadır...</div>
+        )}
+        {money - total === 0 && <div>Paran bitti... Çalış çalış çalış...</div>}
+      </div>
     </>
   );
 };
