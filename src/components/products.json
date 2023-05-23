@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Sakız",
+        "price": 0.5
+    },
+    {
+        "id": 2,
+        "title": "Kola",
+        "price": 7
+    },
+    {
+        "id": 3,
+        "title": "Ayakkabı",
+        "price": 360
+    },
+    {
+        "id": 4,
+        "title": "Çiçek",
+        "price": 120
+    },
+    {
+        "id": 5,
+        "title": "Mouse",
+        "price": 90
+    },
+    {
+        "id": 6,
+        "title": "Mendil",
+        "price": 15
+    },
+    {
+        "id": 7,
+        "title": "Oyuncak",
+        "price": 185
+    },
+    {
+        "id": 8,
+        "title": "Çanta",
+        "price": 110
+    },
+    {
+        "id": 9,
+        "title": "Monitör",
+        "price": 150
+    },
+    {
+        "id": 10,
+        "title": "Kalem",
+        "price": 40
+    },
+    {
+        "id": 11,
+        "title": "Gömlek",
+        "price": 75
+    },
+    {
+        "id": 12,
+        "title": "Nescafe",
+        "price": 16
+    },
+    {
+        "id": 13,
+        "title": "Kulaklık",
+        "price": 300
+    },
+    {
+        "id": 14,
+        "title": "Cips",
+        "price": 11
+    }
+]

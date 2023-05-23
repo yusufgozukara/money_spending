@@ -1,7 +1,11 @@
 import React from "react";
 
-const Header = () => {
-  return <div>Head</div>;
+const Header = ({ money }) => {
+  return (
+    <>
+      <div>Harcamak için {money} $ paranız bulunmaktadır...</div>
+    </>
+  );
 };
 
 export default Header;

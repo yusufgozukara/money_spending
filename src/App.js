@@ -1,9 +1,13 @@
 import "./App.css";
+import { useState, useEffect } from "react";
+import Header from "./components/Header";
 
 function App() {
+  const [money, setMoney] = useState(100);
+
   return (
     <>
-      <h1>bir</h1>
+      <Header money={money} />
     </>
   );
 }
