@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import products from "./products.json";
 import Product from "./components/Product";
+import Basket from "./components/Basket";
 
 function App() {
   const [money, setMoney] = useState(100);
@@ -37,7 +38,12 @@ function App() {
           money={money}
         />
       ))}
-      <button onClick={resetBasket}> Sepeti Sıfırla</button>
+      <Basket
+        resetBasket={resetBasket}
+        products={products}
+        basket={basket}
+        total={total}
+      />
     </>
   );
 }
