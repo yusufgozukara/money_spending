@@ -5,7 +5,7 @@ const Header = ({ money, total }) => {
     <>
       <div>
         {total > 0 && money - total !== 0 && (
-          <div>Harcamak için $({money - total}) paranız bulunmaktadır...</div>
+          <div>Harcayacak $({money - total}) paranız bulunmaktadır...</div>
         )}
         {total === 0 && (
           <div>Harcamak için $({money}) paranız bulunmaktadır...</div>
