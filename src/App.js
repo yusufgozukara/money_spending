@@ -38,12 +38,14 @@ function App() {
           money={money}
         />
       ))}
-      <Basket
-        resetBasket={resetBasket}
-        products={products}
-        basket={basket}
-        total={total}
-      />
+      {total > 0 && (
+        <Basket
+          resetBasket={resetBasket}
+          products={products}
+          basket={basket}
+          total={total}
+        />
+      )}
     </>
   );
 }
